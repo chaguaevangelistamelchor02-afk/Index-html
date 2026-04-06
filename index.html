@@ -174,10 +174,9 @@ let historia=[
 {tipo:"img", titulo:"15. Mi universo 🌍", texto:"Eres mi todo ❤️", src:"imagenes15.jpg"},
 {tipo:"img", titulo:"16. Amor eterno 💞", texto:"Te amo sin fin 💖", src:"imagenes16.jpg"},
 
-{tipo:"video, titulo:"17. Un recuerdo que guardo 🎥", texto:"Mira esto mi amor ❤️", src:"Video17.mp4"},
+{tipo:"video", titulo:"17. Un recuerdo que guardo 🎥", texto:"Mira esto mi amor ❤️", src:"Video17.mp4"},
 {tipo:"video", titulo:"18. Un momento inolvidable 🎬", texto:"Nunca olvidaré esto 💕", src:"Video18.mp4"},
 {tipo:"video", titulo:"19. Nuestro amor para siempre ❤️", texto:"Esto es solo el comienzo 🥹", src:"Video19.mp4"}
-
 ];
 
 // CARGAR
@@ -192,20 +191,20 @@ function cargar(){
     document.getElementById("titulo").innerText=data.titulo;
     document.getElementById("texto").innerText=data.texto;
 
-    if(data.tipo==="img"){
-        img.style.display="block";
-        video.style.display="none";
-        emoji.innerText="";
-        img.src=data.src;
-        musica.volume=1;
+    if(data.tipo === "img"){
+        img.style.display = "block";
+        video.style.display = "none";
+        emoji.innerText = "";
+        img.src = data.src;
+        musica.volume = 1;
     }
 
-    if(data.tipo==="video"){
-        img.style.display="none";
-        video.style.display="block";
-        emoji.innerText="🥹";
-        video.src=data.src;
-        musica.volume=0.03; // 🔥 ultra bajo
+    if(data.tipo === "video"){
+        img.style.display = "nnonene";
+        video.style.display =  "blok"
+        emoji.innerText = "🥺�";
+        video.src = data.src;
+        musica.volume = 0.03; // 🔥 ultra bajo
     }
 }
 
