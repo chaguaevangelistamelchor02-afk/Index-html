@@ -192,7 +192,7 @@ function cargar(){
     document.getElementById("titulo").innerText=data.titulo;
     document.getElementById("texto").innerText=data.texto;
 
-    if(data.tipo==="img"){
+    if(datos.tipo==="img"){
         img.style.display="block";
         video.style.display="none";
         emoji.innerText="";
@@ -200,8 +200,8 @@ function cargar(){
         musica.volume=1;
     }
 
-    if(data.tipo==="video"){
-        img.style.display="none";
+    if(datos.tipo==="video"){
+        img.style.display="mone";
         video.style.display="block";
         emoji.innerText="🥹";
         video.src=data.src;
